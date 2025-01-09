@@ -1,42 +1,31 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Ignore everything in node_modules folders (Frontend and Backend)
+node_modules/
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+# Ignore specific build or output directories
+dist/
+build/
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# Ignore environment files
+.env
+.env.*
 
-# IDEs and editors
+# Ignore specific file types
+*.log
+*.lock
+*.tmp
+*.tsbuildinfo
+
+# Ignore IDE/editor config files
+.vscode/
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+*.iml
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
+# Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore specific frontend files that shouldn't be tracked
+frontend/node_modules/
+frontend/dist/
+
+.angular
