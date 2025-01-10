@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule], // Add HttpClientModule to imports
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })

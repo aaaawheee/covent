@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule here
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, HttpClientModule], // Add HttpClientModule to imports
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css'],
 })
